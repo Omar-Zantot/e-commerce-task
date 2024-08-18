@@ -1,0 +1,45 @@
+<div class="card mb-4">
+  <div class="card-header">
+    <h4 class="mb-0">Add Product</h4>
+  </div>
+  <div class="card-body">
+    <div class="mb-3">
+      <label for="productName" class="form-label">Name</label>
+      <input
+        id="productName"
+        [(ngModel)]="name"
+        class="form-control"
+        placeholder="Product Name"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="productImage" class="form-label">Image URL</label>
+      <input
+        id="productImage"
+        [(ngModel)]="image"
+        class="form-control"
+        placeholder="Image URL"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="productPrice" class="form-label">Price</label>
+      <input
+        id="productPrice"
+        [(ngModel)]="price"
+        type="number"
+        class="form-control"
+        placeholder="Product Price"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="productDescription" class="form-label">Description</label>
+      <textarea
+        id="productDescription"
+        [(ngModel)]="description"
+        class="form-control"
+        placeholder="Product Description"
+      ></textarea>
+    </div>
+    <button (click)="addProduct()" class="btn btn-primary">Add Product</button>
+  </div>
+</div>
