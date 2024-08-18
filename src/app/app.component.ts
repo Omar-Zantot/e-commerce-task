@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IProduct } from '../models/product';
 
 @Component({
   selector: 'app-root',
@@ -47,12 +48,7 @@ export class AppComponent {
     },
   ];
 
-  addProduct(newProduct: {
-    name: string;
-    image: string;
-    price: number;
-    description: string;
-  }) {
+  addProduct(newProduct: IProduct) {
     this.products.push(newProduct);
   }
 }
