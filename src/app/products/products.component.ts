@@ -7,5 +7,5 @@ import { IProduct } from '../../models/product';
   styleUrl: './products.component.scss',
 })
 export class ProductsComponent {
-  @Input() product!: IProduct;
+  @Input() product!: IProduct | undefined; // undifined is added to avoid error if you have any comment pls let me know
 }
